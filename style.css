@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Matemasie&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Bungee Tint", sans-serif;
+}
+
+body{
+    background-color: black;
+  
+}
+
+header{
+   
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(147deg, rgba(97,97,97,1) 0%, rgba(0,0,0,1) 56%, rgba(0,0,0,1) 96%);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav h1{
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+}
+
+
+
+header nav .image img{
+    width: 150px;
+    height: 150px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    position: relative;
+}
+
+.navbar input{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    background-color: gray;
+    opacity: 0.9;
+    
+}
+.navbar i{
+    position: absolute;
+    right:10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.navbar i:hover{
+    color: black;
+    scale: 1.30;
+    transition: 0.7s;
+}
+
+ section{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,auto)) ;
+    color: white;
+    gap: 30px;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+ }
+
+ section .box{
+    border: 1px solid rgb(185, 175, 175);
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(270deg, rgba(168,168,168,1) 0%, rgba(31,31,31,1) 51%, rgba(55,55,55,1) 100%);
+ }
+
+ section .box .film-box{
+    padding: 5px;
+    cursor:pointer;
+   
+ }
+
+ section .box .film-box:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    transition: 0.7s;
+ }
+
+ section .box .film-box img:hover{
+    scale: 0.99;
+    transition: 0.7s;
+ }
+ section .box .film-box i{
+    color: yellow;
+ }
+
+ .footer {
+    color: red;
+    background: linear-gradient(147deg, rgba(97,97,97,1) 0%, rgba(0,0,0,1) 56%, rgba(0,0,0,1) 96%);
+ }
+ .footer h3{
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 35px;
+ }
+ .footer .icons{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 35px;
+    margin-top: 30px;
+ }
+
+.link{
+ text-align: center;
+ margin-top: 20px;
+ padding: 20px;
+}
+.link a{
+    border: 2px solid #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.link a:hover{
+    background-color: blueviolet;
+    transition: 0.7s;
+}
+
+ @media(max-width:650px){
+
+    .navbar{
+        display: none;
+    }
+    nav h1{
+        text-align: center;
+    }
+ }
